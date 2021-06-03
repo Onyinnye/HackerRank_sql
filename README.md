@@ -1,2 +1,2 @@
 # HackerRank_sql
-My SQL journey with HackerRank
+HackerRank is a very good platform to test your SQL skill and even learn SQL, I'm on this journey with a couple of my friends and I'd be addinng here the queries for each question I answer which I hope someone would find useful.....
