@@ -1,0 +1,7 @@
+/--write a query to print the company_code, founder name, total number of lead managers, total number of senior managers, total number of managers, and total number of employees. Order your output by ascending company_code./
+select company.company_code,founder, COUNT(DISTINCT lead_manager_code), COUNT(DISTINCT senior_manager_code), COUNT(DISTINCT manager_code), COUNT(DISTINCT employee_code)
+from company
+join employee
+on company.company_code = employee.company_code
+group by 1,2
+order by 1
