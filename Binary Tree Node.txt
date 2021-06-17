@@ -1,0 +1,14 @@
+Binary Tree Nodes
+
+--QUESTION
+
+You are given a table, BST, containing two columns: N and P, where N represents the value of a node in Binary Tree, and P is the parent of N.
+
+--QUERY
+
+SELECT n, CASE WHEN (p IS Null) THEN 'Root' 
+               WHEN (n IN (SELECT DISTINCT p FROM BST)) THEN 'Inner' 
+               ELSE 'Leaf' 
+               END type
+FROM BST
+ORDER BY n;
