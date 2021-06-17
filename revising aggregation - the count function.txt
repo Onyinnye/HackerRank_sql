@@ -1,0 +1,11 @@
+Revising aggregation - The Count Function
+
+--QUESTION
+
+Query a count of the number of cities in CITY having a Population larger than 100,000.
+
+--QUERY
+
+SELECT COUNT(*)
+FROM city
+WHERE population >100000
